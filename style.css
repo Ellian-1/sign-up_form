@@ -129,3 +129,8 @@ button[type="submit"] {
 .login-text > p > a:hover {
     text-decoration: underline;
 }
+
+.refference {
+    margin-top: 100px;
+    color: #919192;
+}
