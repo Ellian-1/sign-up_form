@@ -27,36 +27,43 @@
             <form action="post" class="form">
 
                 <fieldset>
-                    <legend>Lets do this!</legend>
-                    <div class="pairs names">
-                        <label for="first-name">First Name
-                            <input type="text" name="first_name" id="first-name">
-                        </label>
-                        
-                        <label for="last-name">Last Name
-                            <input type="text" name="last_name" id="last-name">
-                        </label>
-                    </div>
-                    <div class="pairs email-and-number">
-                        <label for="user-email">Email
-                            <input type="email" name="user_email" id="user-email">
-                        </label>
-
-                        <label for="phone-number">Phone number
-                            <input type="number" name="phone_number" id="phone-number">
-                        </label>
-                    </div>
-                    <div class="pairs password">
-                        <label for="user-password">Password
-                            <input type="password" name="user_password" id="user-password">
-                        </label>
-                        <label for="confirm-password">Confirm Password
-                            <input type="password" name="confirm_password" id="confirm-password">
-                        </label>
+                    <legend>Let's do this!</legend>
+                    <div class="columns">
+                        <div class="column-1">
+                            <label for="first-name">First Name
+                                <input type="text" name="first_name" id="first-name" minlength="3">
+                            </label>
+    
+                            <label for="user-email">Email
+                                <input type="email" name="user_email" id="user-email" minlength="20">
+                            </label>
+    
+                            <label for="user-password">*Password
+                                <input type="password" name="user_password" id="user-password" required>
+                            </label>
+    
+                        </div>
+                        <div class="column-2">
+                            <label for="last-name">Last Name
+                                <input type="text" name="last_name" id="last-name" maxlength="20">
+                            </label>                        
+    
+                            <label for="phone-number">Phone number
+                                <input type="number" name="phone_number" id="phone-number" minlength="10" maxlength="10">
+                            </label>
+    
+                            <label for="confirm-password">*Confirm Password
+                                <input type="password" name="confirm_password" id="confirm-password" required>
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
-
+                <button type="submit">Create account</button>
             </form>
+            <div class="login-text">
+                <h2>Already have an account?</h2>
+                <p><a href="#">Log in</a></p>
+            </div>
         </section>
     </div>
 </body>
