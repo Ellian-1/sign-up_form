@@ -40,6 +40,7 @@
 
 .form-text, .login-text {
     margin-left: 5px;
+    color: #454446;
 }
 
 .form-text {
@@ -63,7 +64,8 @@ legend {
     font-weight: 500;
     position: relative;
     top: 0;
-    left: 50%;
+    left: 45%;
+    margin-bottom: 10px;
 }
 
 .columns,
@@ -78,6 +80,12 @@ legend {
 
 .column-1,
 .column-2 {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls {
+    display: flex;
     flex-direction: column;
 }
 
@@ -106,6 +114,18 @@ button[type="submit"] {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
-    bottom: 0;
-    left: 50%;
+    bottom: 5px;
+    left: 43%;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+.login-text > p > a {
+    text-decoration: none;
+    color: #34173E;
+    transition: 1s;
+}
+
+.login-text > p > a:hover {
+    text-decoration: underline;
 }

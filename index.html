@@ -30,31 +30,37 @@
                     <legend>Let's do this!</legend>
                     <div class="columns">
                         <div class="column-1">
-                            <label for="first-name">First Name
+                            <div class="controls firstName">
+                                <label for="first-name">First Name:</label>
                                 <input type="text" name="first_name" id="first-name" minlength="3">
-                            </label>
+                            </div>
     
-                            <label for="user-email">Email
+                            <div class="controls userEmail">
+                                <label for="user-email">Email:</label>
                                 <input type="email" name="user_email" id="user-email" minlength="20">
-                            </label>
+                            </div>
     
-                            <label for="user-password">*Password
+                            <div class="controls userPassword">
+                                <label for="user-password">*Password:</label>
                                 <input type="password" name="user_password" id="user-password" required>
-                            </label>
+                            </div>
     
                         </div>
                         <div class="column-2">
-                            <label for="last-name">Last Name
-                                <input type="text" name="last_name" id="last-name" maxlength="20">
-                            </label>                        
-    
-                            <label for="phone-number">Phone number
+                            <div class="controls lastName">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" name="last_name" id="last-name" maxlength="20"> 
+                            </div>                      
+
+                            <div class="controls phoneNumber">
+                                <label for="phone-number">Phone number:</label>
                                 <input type="number" name="phone_number" id="phone-number" minlength="10" maxlength="10">
-                            </label>
-    
-                            <label for="confirm-password">*Confirm Password
+                            </div>
+
+                            <div class="controls confirmPassword">
+                                <label for="confirm-password">*Confirm Password:</label>
                                 <input type="password" name="confirm_password" id="confirm-password" required>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
